@@ -39,7 +39,7 @@ function PassportUserDetails() {
                 />
             </div> */}
 
-                <strong className=' p-12 rounded-2xl  text-3xl '>Passport Details</strong>
+                <strong className=' p-12 rounded-2xl  text-3xl '>Users Passport Details</strong>
             <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 ">
                
 

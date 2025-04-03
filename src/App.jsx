@@ -40,14 +40,14 @@ const App = () => {
             <Route path="/forgotPass" element={<ForgotPassword />} />
             <Route path="/about" element={<About />} />
             <Route path="/" element={<VerificationCards />} />
-            <Route path="AadharVerify" element={<AadharVerify />} />
-            <Route path="DashboardHome" element={<DashboardHome />} />
-            <Route path="/driving" element={<DrivingLicenseVerify />} />
-            <Route path="/DLUserDetails" element={<DrivingLicenseForm />} />
-            <Route path="/VotingIdVerifying" element={<VotingIdVerifying />} />
-            <Route path="/VotingIdUserDetail" element={<VoterIdForm />} />
-            <Route path="/Passportverify" element={<PassportVerify />} />
-            <Route path="/PassportVerifyUser" element={<PassportVerifyUser />} />
+              <Route path="AadharVerify" element={<AadharVerify />} />
+              <Route path="DashboardHome" element={<DashboardHome />} />
+              <Route path="/driving" element={<DrivingLicenseVerify />} />
+              <Route path="/DLUserDetails" element={<DrivingLicenseForm />} />
+              <Route path="/VotingIdVerifying" element={<VotingIdVerifying />} />
+              <Route path="/VotingIdUserDetail" element={<VoterIdForm />} />
+              <Route path="/Passportverify" element={<PassportVerify />} />
+              <Route path="/PassportVerifyUser" element={<PassportVerifyUser />} />
             <Route
               path="/dashboard/*"
               element={

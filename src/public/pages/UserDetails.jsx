@@ -69,7 +69,7 @@ function UserDetails() {
             <div className="p-6 max-h-[74vh] overflow-y-auto mt-6 bg-blue-200 rounded-2xl ">
 
 
-            <strong className='flex  my-6 rounded-2xl p-4 bg-neutral-40 text-3xl'>User Aadhar verifycation </strong>
+            <strong className='flex  my-6 rounded-2xl p-4 bg-neutral-40 text-3xl'>User Aadhaar verification </strong>
           
                 {filteredCustomers.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
