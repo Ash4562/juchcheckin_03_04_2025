@@ -13,7 +13,7 @@ function UserDetails() {
     const location = useLocation(); // ✅ Correctly getting current path
 
     console.log("bokking pre muj adadd",data);
-    const bookings = data || [];
+    const bookings = data?.BookingData || [];
 
     // Combine and filter customers
     const allCustomers = bookings.flatMap((booking) => booking.customers);

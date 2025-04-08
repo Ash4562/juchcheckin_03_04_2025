@@ -28,7 +28,7 @@ function PassportUserDetails() {
     if (error) return <div className="text-center text-red-500">Error loading data</div>;
 
     return (
-        <div className=' p-4 m-4 rounded-2xl  bg-[#F3FFDF]'>
+        <div className=' p-4 m-4 rounded-2xl my-8 bg-[#F3FFDF]'>
             {/* <div className="w-full p-4 shadow-md">
                 <input
                     type="text"
@@ -40,7 +40,7 @@ function PassportUserDetails() {
             </div> */}
 
                 {/* <strong className=' p-12 rounded-2xl  text-3xl '>Users Passport Details</strong> */}
-            <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 ">
+            <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 ">
                
 
                 {filteredCustomers.length > 0 ? (
