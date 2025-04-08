@@ -55,12 +55,12 @@ console.log("fsdgfdhghggdhgdhhdggdhgddgh",drivingLicenses[0].createdAt
 
                 {/* <strong className='flex  my-6 rounded-2xl p-4  text-3xl'>Driving License Details</strong> */}
                 {filteredCustomers.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6">
                         {filteredCustomers.map((user) => (
                             <div
                                 key={user.document_id}
                                 onClick={() => setSelectedUser(user)}
-                                className="p-4 rounded-lg shadow-md bg-white cursor-pointer transition duration-300 hover:shadow-xl"
+                                className="p-4  m-4 rounded-lg shadow-md bg-[#ECF8F9] cursor-pointer transition duration-300 hover:shadow-xl"
                             >
                                 <img
                                     src={

@@ -70,7 +70,7 @@ function AdhharUserDetails() {
                                 <div
                                     key={user._id}
                                     onClick={() => setSelectedUser(user)}
-                                    className="p-4 rounded-lg shadow-md bg-white cursor-pointer transition duration-300 hover:shadow-xl"
+                                    className="p-4 rounded-lg shadow-md bg-[#ECF8F9] cursor-pointer transition duration-300 hover:shadow-xl"
                                 >
                                     <img
                                         src={

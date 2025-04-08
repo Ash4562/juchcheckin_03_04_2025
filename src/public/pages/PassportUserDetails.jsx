@@ -45,7 +45,7 @@ function PassportUserDetails() {
 
                 {filteredCustomers.length > 0 ? (
                     filteredCustomers.map((user) => (
-                        <div key={user.document_id} className="p-4 shadow-md text-center bg-white rounded-lg cursor-pointer" onClick={() => setSelectedUser(user)}>
+                        <div key={user.document_id} className="p-4 shadow-md text-center bg-[#ECF8F9] rounded-lg cursor-pointer" onClick={() => setSelectedUser(user)}>
                             
                            <h1 className='flex justify-center '> <IoPersonCircleSharp className=' text-9xl' /></h1>
                             <h2 className="text-lg font-semibold">{user.first_name} {user.last_name}</h2>

@@ -48,7 +48,7 @@ function UserVoterDetails() {
                             <div
                                 key={user._id}
                                 onClick={() => setSelectedUser(user)}
-                                className="p-4 rounded-lg shadow-md bg-white cursor-pointer transition duration-300 hover:shadow-xl"
+                                className="p-4 rounded-lg shadow-md bg-[#ECF8F9] cursor-pointer transition duration-300 hover:shadow-xl"
                             >
                                  <h1 className='flex justify-center '> <IoPersonCircleSharp className=' text-9xl' /></h1>
                                 <h1 className="text-center mt-2 font-semibold text-lg">{user.name}</h1>
