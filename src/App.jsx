@@ -16,6 +16,7 @@ import PassportVerifyUser from './public/pages/PassportVerifyUser';
 import UserDrivngLicencesDetals from './public/pages/UserDrivngLicencesDetals';
 import PassportUserDetails from './public/pages/PassportUserDetails';
 import UserVoterDetails from './public/pages/UserVoterDetails';
+import AdhharUserDetails from './public/pages/AdhharUserDetails';
 
 // Lazy-loaded components
 const PublicLayout = lazy(() => import('./public/PublicLayout'));
@@ -52,12 +53,14 @@ const App = () => {
               path="/dashboard/*"
               element={
                 <ProtectedRoute>
+                  <UserDetails/>
                 <Routes>
                   <Route path="DashboardHome" element={<DashboardHome />} />  
 
 
                   <Route path="profile" element={<Profile />} />
-                  <Route path="userdetails" element={<UserDetails />} />
+                  {/* <Route path="userdetails" element={<UserDetails />} /> */}
+                  <Route path="AdhharUserDetails" element={<AdhharUserDetails />} />
                   <Route path="PassportUserDetails" element={<PassportUserDetails />} />
                   <Route path="UserDrivngLicencesDetals" element={<UserDrivngLicencesDetals />} />
                   <Route path="UserVoterDetails" element={<UserVoterDetails />} />

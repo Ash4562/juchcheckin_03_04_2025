@@ -4,6 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 import { MdDeleteForever } from "react-icons/md";
+import backgroundImage from "/bg-hotel.png";
 
 const PassportVerify = () => {
   const location = useLocation();
@@ -101,7 +102,7 @@ const PassportVerify = () => {
   };
 
   return (
-    <motion.div className="flex flex-col items-center min-h-screen py-16">
+    <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className="flex flex-col items-center min-h-screen py-16">
       <h1 className="text-2xl font-bold mb-4">Passport Verification</h1>
       <motion.div
         initial={{ y: -50, opacity: 0 }}

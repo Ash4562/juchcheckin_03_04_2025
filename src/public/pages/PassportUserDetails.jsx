@@ -28,7 +28,7 @@ function PassportUserDetails() {
     if (error) return <div className="text-center text-red-500">Error loading data</div>;
 
     return (
-        <div className=' bg-blue-200 rounded-2xl my-8'>
+        <div className=' p-4 m-4 rounded-2xl  bg-[#F3FFDF]'>
             {/* <div className="w-full p-4 shadow-md">
                 <input
                     type="text"
@@ -39,7 +39,7 @@ function PassportUserDetails() {
                 />
             </div> */}
 
-                <strong className=' p-12 rounded-2xl  text-3xl '>Users Passport Details</strong>
+                {/* <strong className=' p-12 rounded-2xl  text-3xl '>Users Passport Details</strong> */}
             <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 ">
                
 
@@ -67,7 +67,7 @@ function PassportUserDetails() {
 
 
 
-                    <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg relative">
+                    <div className="bg-white p-6 mt-48 rounded-lg shadow-lg w-full max-w-lg relative">
                         <button onClick={() => setSelectedUser(null)} className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full">X</button>
                         <h1 className='flex justify-center '> <IoPersonCircleSharp className=' text-9xl' /></h1>
                         <h3 className="text-2xl font-bold text-center" >{selectedUser.first_name} {selectedUser.last_name}</h3>

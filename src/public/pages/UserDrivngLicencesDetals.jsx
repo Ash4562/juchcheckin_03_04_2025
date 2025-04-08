@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 // import { useGetDrivingLicenseQuery } from '../../redux/api/VoterDrivingPassApi';
 import { useGetBookingsQuery } from '../../redux/api/VoterDrivingPassApi';
+import { Link } from 'react-router-dom';
+// import UserDetails from './UserDetails';
 
 function UserDrivngLicencesDetals() {
     const [selectedUser, setSelectedUser] = useState(null);
@@ -43,22 +45,15 @@ console.log("fsdgfdhghggdhgdhhdggdhgddgh",drivingLicenses[0].createdAt
     }
 
     return (
-        <>
+        < >
             {/* Search Bar */}
-            {/* <div className="w-full sticky top-0 bg-white z-10 p-4 shadow-md">
-                <input
-                    type="text"
-                    placeholder="Search by name, License ID, or address..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full p-3 pl-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                />
-            </div> */}
+   {/* <UserDetails/> */}
+            
 
             {/* User Cards Grid */}
-            <div className="p-6 max-h-[74vh] overflow-y-auto  bg-blue-200 rounded-2xl mt-4">
+            <div className="p-4 rounded-2xl  m-4 bg-[#F3FFDF] ">
 
-                <strong className='flex  my-6 rounded-2xl p-4  text-3xl'>Driving License Details</strong>
+                {/* <strong className='flex  my-6 rounded-2xl p-4  text-3xl'>Driving License Details</strong> */}
                 {filteredCustomers.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         {filteredCustomers.map((user) => (

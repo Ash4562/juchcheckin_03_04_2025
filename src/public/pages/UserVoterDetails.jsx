@@ -38,9 +38,9 @@ function UserVoterDetails() {
 
     return (
         <div className=''>
-            <div className=" max-h-[74vh] overflow-y-auto mt-4 bg-blue-200 rounded-2xl p-4">
+            <div className=" bg-[#F3FFDF] m-4 overflow-y-auto rounded-2xl p-4">
                 
-            <strong className='flex  my-6 rounded-2xl p-4 text-3xl'>Users Voter Details</strong>
+            {/* <strong className='flex  my-6 rounded-2xl p-4 text-3xl'>Users Voter Details</strong> */}
                 {/* <strong className='flex justify-center p-4 bg-neutral-400 text-8xl mt-6'>Voter Details</strong> */}
                 {filteredCustomers.length > 0 ? (
                     <div className="grid grid-cols-1 mt-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
