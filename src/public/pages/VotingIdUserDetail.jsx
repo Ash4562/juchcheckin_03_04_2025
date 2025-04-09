@@ -9,7 +9,8 @@ import backgroundImage from "/bg-hotel.png";
 
 const VoterIdForm = () => {
     const location = useLocation();
-    const { hotel, verifiedData } = location.state || {}; 
+    const { hotel, verifiedData,
+     } = location.state || {}; 
     const navigate = useNavigate();
     const [submitVoter, { isLoading, isSuccess, isError, error }] = useSubmitvoterIdMutation();
     const { data :getHotelId } = useGetSingleHotelQuery();
@@ -80,14 +81,14 @@ const VoterIdForm = () => {
                 age: data.age || 0,
                 district: data.district || "",
 
-               
+           
                 state: data.state || "",
                 assembly_constituency_number: data.assembly_constituency_number || "",
                 assembly_constituency_name: data.assembly_constituency_name || "",
                 parliamentary_constituency_name: data.parliamentary_constituency_name || "",
                 part_number: data.part_number || "",
                 part_name: data.part_name || "",
-                serial_number: data.serial_number || "",
+                serial_number: data.voter_id || "",
                 polling_station: data.polling_station || "",
                 phone_number: data.phone_number || "",
                 room_number: data.room_number || "",
@@ -97,7 +98,7 @@ const VoterIdForm = () => {
             check_out_time: "" // 
             }))
         };
-    
+    console.log();
         console.log("🚀 Final Payload:", JSON.stringify(requestData, null, 2)); // Debugging
     
         try {

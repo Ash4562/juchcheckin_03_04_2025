@@ -8,6 +8,7 @@ import backgroundImage from "/bg-hotel.png";
 
 const VotingIdVerifying = () => {
   const location = useLocation();
+
   const navigate = useNavigate();
 
   const initialNumberOfPeople = location.state?.numberOfPeople || 0;
@@ -171,7 +172,7 @@ const VotingIdVerifying = () => {
         animate={{ opacity: 1 }}
       >
         <button
-          onClick={() => navigate("/VotingIdUserDetail", { state: { verifiedData, hotel, initialNumberOfPeople } })}
+          onClick={() => navigate("/VotingIdUserDetail", { state: { verifiedData,voterIds, hotel, initialNumberOfPeople } })}
           className="bg-blue-300 text-white px-4 py-2 rounded-md"
         >
           View Full Details

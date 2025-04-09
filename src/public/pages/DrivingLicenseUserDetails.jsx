@@ -154,7 +154,18 @@ console.log("Hotel ID:", hotel_id);
                             <input type="text" name="address" value={data.address ||  data.rto_details} readOnly className="border p-2 w-full rounded-md shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none" />
     
                             <label className="block mt-1 font-semibold text-white">License Number:</label>
-                            <input type="text" name="license_number" value={data.license_number} readOnly className="border p-2 w-full rounded-md shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+                            <input
+  type="text"
+  name="license_number"
+  value={
+    data.license_number
+      ? `XXXX XXXX ${data.license_number.slice(-4)}`
+      : ""
+  }
+  readOnly
+  className="border p-2 w-full rounded-md shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none"
+/>
+
     
                             <label className="block mt-1 font-semibold text-white">Date of Birth:</label>
                             <input type="text" name="date_of_birth" value={data.date_of_birth} readOnly className="border p-2 w-full rounded-md shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none" />
